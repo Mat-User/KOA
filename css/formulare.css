@@ -1,0 +1,73 @@
+/*===============================================================
+	Formularstylesheet - Homepage Dj-Kingonair
+
+Datei: formulare.css
+Datum: 18.02.16
+Autor: ...
+==============================================================*/
+
+@media screen {
+
+.kontaktformular {
+	background-color: #D5D3B0;
+	line-height: 1.;
+	padding: 1em;
+	border-top: 1px solid #d9d9d9;
+	border-bottom: 1px solid #d9d9d9;
+	margin-bottom: 2em;
+}
+.kontaktformular > div {
+	margin-bottom: 1em;
+}
+.kontaktformular label {
+	display: inline-block;			/* Beschriftung in eigener Zeile */
+	vertical-align: top;
+	text-align: right;
+	width: 125px;
+	cursor: pointer;				/* Mauszeiger wird zur Hand */
+	margin-bottom: 0.25em;
+}
+.kontaktformular input[type="text"],
+.kontaktformular input[type="email"],
+.kontakformular textarea {
+	width: 280px;
+	padding: 0.25em;
+	margin-bottom: 1em;
+}
+.kontaktformular textarea {
+	max-width: 100%;
+	min-height: 7em;
+}
+.kontaktformular input:focus,
+.kontaktformular textarea:focus {
+	background-color: #ffeda0;
+}
+.kontaktformular input[type="submit"] {
+	font-size: 100%;
+	font-family: "Open Sans", sans-serif;
+	background: #ffeda0;
+	padding: 10px;
+	border: 1px solid #f3c600;
+	border-radius: 8px;
+}
+.kontaktformular input[type="submit"]:hover,
+.kontaktformular input[type="submit"]:focus {
+	background: #009EE0;
+	color: white;
+	border: 1px solid #58BAE4;
+	cursor: pointer;
+	outline: none;
+}
+.kontaktformular input[type="submit"] { margin-left: 130px; }
+
+
+
+
+
+
+
+
+} /* Ende @media - nicht löschen */
+/*==============================================================
+	E	N	D	E
+==============================================================*/

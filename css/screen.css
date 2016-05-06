@@ -1,0 +1,160 @@
+/*===============================================
+	Zentrales Stylesheet
+
+Datei: mainstyle.css
+Datum: 29.03.16
+===============================================*/
+
+/*-----------------Reset------------------------*/
+* {
+	padding: 0;
+	margin: 0;
+}
+header, nav, section, article, aside, footer {
+	display: block;
+}
+h2, h3, h4 {
+	padding: 20px 0px 20px 0px; ;
+}
+h1 { 
+	font: Tahoma 22px bold;
+}
+h2 {
+	font: Tahoma 20px bold;
+}
+h3 {
+	font: Tahoma 18px bold;
+}
+h4 {
+	font: Tahoma 16px bold;
+}
+/*----------------Basic Styles------------------*/
+
+body {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	line-height: 1.5;
+	background: url(../img/background/1.png);	
+	background-repeat: repeat;
+	background-attachment: fixed;						
+}
+#big_wrapper {
+	display: flex;
+	flex-direction: column;
+	flex:1;
+}
+#top_header {
+	display: flex;
+	flex-direction: row;
+	height: 200px;
+	padding: 10px;
+}
+#top_header.logo {
+	flex: 1;
+	color: black;
+	padding: 40px 10px 40px 10px;
+}
+#top_menu {
+	flex: 1;
+	text-align: right;
+	background: linear-gradient(to right, grey, lightgrey);
+	margin: auto 5px;
+	border: 3px solid grey;
+}
+#top_menu li {
+	display: inline-block;
+	padding: 5px;	
+	font-size: 25px;
+}
+#registerbutton {
+	position: absolute;
+	Top: 20px;
+	Right: 20px;
+	background-color: #C0C0C0;	/*grey*/
+	border: 3px solid grey;
+	border-radius: 10px;
+	padding: 5px;
+}
+/*
+#foto_display {
+}
+*/
+#social_icons {
+	text-align: right;
+	padding: 0px 20px;
+	color: silver;	
+}
+#social_icons p {
+	padding-right: 150px;
+}
+#left_side {
+	background: grey;
+	flex: 1;
+	background-color: rgba(128,128,128,0.7);
+	border-radius: 10px;
+	border: 3px solid grey;
+	padding: 20px;
+	margin: 0px 10px 0px 10px;
+}
+#side_menu li {
+	color: silver;
+	padding: 20px 0px 0px 0px;
+	list-style-type: none;
+	font-size: 20px;
+}
+#main_flex {
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+}
+#main_section {
+	background-color: silver;
+	border-radius: 10px;
+	color: black;
+	flex: 4;
+	padding: 20px;
+	border: 3px solid grey;
+}
+#right_side  {
+	flex: 1;
+	background-color: rgba(128,128,128,0.7);
+	border-radius: 10px;
+	color: silver;
+	border: 3px solid grey;
+	padding: 20px;
+	margin: 0px 10px 0px 10px;
+}
+#the_footer {	
+	padding: 20px;
+}
+#bottom_address {
+	text-align: center;
+	color: silver;
+}
+
+/*-------------------Links--------------------------*/
+#top_header a:active {
+	outline-style: none;
+}
+/* Hyperlinks */
+a { text-decoration: none; }
+main a { text-decoration: underline; }
+
+a:link { color: black; }						
+a:visited { color: black; }	/*lighter black*/						
+a:hover,
+a:focus {
+	color: #FF8F00;		/*strong orange*/
+}
+a:active {
+	color: white;
+}
+/*-----------------other Styles----------------------*/
+.maintitle {
+	font-size: 25px;
+	text-align: center;
+}
+
+
