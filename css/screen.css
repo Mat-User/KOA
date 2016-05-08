@@ -5,17 +5,8 @@ Datei: mainstyle.css
 Datum: 29.03.16
 ===============================================*/
 
-/*-----------------Reset------------------------*/
-* {
-	padding: 0;
-	margin: 0;
-}
-header, nav, section, article, aside, footer {
-	display: block;
-}
-h2, h3, h4 {
-	padding: 20px 0px 20px 0px; ;
-}
+/*-----------------H1-H6------------------------*/
+
 h1 { 
 	font: Tahoma 22px bold;
 }
@@ -56,6 +47,15 @@ body {
 	color: black;
 	padding: 40px 10px 40px 10px;
 }
+#registerbutton {
+	position: absolute;
+	Top: 20px;
+	Right: 20px;
+	background-color: #C0C0C0;	/*grey*/
+	border: 3px solid grey;
+	border-radius: 10px;
+	padding: 5px;
+}
 #top_menu {
 	flex: 1;
 	text-align: right;
@@ -68,19 +68,6 @@ body {
 	padding: 5px;	
 	font-size: 25px;
 }
-#registerbutton {
-	position: absolute;
-	Top: 20px;
-	Right: 20px;
-	background-color: #C0C0C0;	/*grey*/
-	border: 3px solid grey;
-	border-radius: 10px;
-	padding: 5px;
-}
-/*
-#foto_display {
-}
-*/
 #social_icons {
 	text-align: right;
 	padding: 0px 20px;
@@ -89,20 +76,19 @@ body {
 #social_icons p {
 	padding-right: 150px;
 }
+
+/*
+#foto_display {
+}
+*/
+
 #left_side {
 	background: grey;
 	flex: 1;
 	background-color: rgba(128,128,128,0.7);
 	border-radius: 10px;
 	border: 3px solid grey;
-	padding: 20px;
 	margin: 0px 10px 0px 10px;
-}
-#side_menu li {
-	color: silver;
-	padding: 20px 0px 0px 0px;
-	list-style-type: none;
-	font-size: 20px;
 }
 #main_flex {
 	display: flex;
@@ -128,6 +114,10 @@ body {
 }
 #the_footer {	
 	padding: 20px;
+	background-color: rgba(128,128,128,0.7);
+	border: 3px solid grey;
+	border-radius: 10px;
+	margin: 10px 10px 10px 10px;
 }
 #bottom_address {
 	text-align: center;

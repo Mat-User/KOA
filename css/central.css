@@ -4,6 +4,8 @@
 Datei: central.css
 Datum: 29.03.16
 ===============================================*/
+@import url(reset.css);
 @import url(screen.css);
 @import url(formulare.css);
+@import url(nav-vertical.css);
 @import url(flexslider.css);

@@ -1,0 +1,45 @@
+/*===========================================================
+			Sitenavigation Vertical - #sidemenue
+
+Datei: navigation_vertical.css
+Autor: ~
+Datum: 07.05.16
+
+============================================================*/
+
+ul.navside{
+	padding: 0;
+	margin: 0;
+	border-top: 1px solid silver;
+	font-size: 20px;
+}
+ul.navside li {
+	list-style-type: none;
+	border-left: 1px solid silver;
+	border-bottom: 1px solid silver;
+}
+ul.navside a {
+	display: block;
+	text-decoration: none;
+	color: black;
+	background-color: gray;
+	padding: 4px;
+	border-left: 3px solid #eee;
+}
+ul.navside a.current {
+	color: black;
+	background-color: #C0C0C0;
+	border-left-color: red;
+	border-bottom: none;
+}
+ul.navside a:hover,
+ul.navside a:focus {
+	color: black;
+	background-color: #C0C0C0;
+	border-left-color: red;
+	border-bottom: none;
+}
+ul.navside a:active {
+	color: black;
+	background-color: #d9d9d9;
+}

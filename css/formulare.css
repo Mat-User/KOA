@@ -9,7 +9,7 @@ Autor: ...
 @media screen {
 
 .kontaktformular {
-	background-color: #D5D3B0;
+	background-color: #ACACAC;
 	line-height: 1.;
 	padding: 1em;
 	border-top: 1px solid #d9d9d9;
@@ -45,7 +45,7 @@ Autor: ...
 .kontaktformular input[type="submit"] {
 	font-size: 100%;
 	font-family: "Open Sans", sans-serif;
-	background: #ffeda0;
+	background: #CCCCCC;
 	padding: 10px;
 	border: 1px solid #f3c600;
 	border-radius: 8px;

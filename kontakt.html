@@ -11,13 +11,14 @@
 </head>
 <body>
 	<div id="big_wrapper">
-			<header id="top_header">					
-				<a href="index.html">
+			<header id="top_header" role="banner">					
+				<h1><a href="index.html">
 					<img src="img/logo/logo_01.png"
 						class="logo"
-						alt="DJ-KINGONAIR"
-					/></a>		
-				<nav id="top_menu">
+						alt="DJ-KINGONAIR"/></a>
+				</h1>
+				
+				<nav id="top_menu" role="navigation">
 					<ul class="navmain level1">			
 						<!--<li><a href="register.html">Register</a></li>-->
 						<li><a href="login.html" class="current">Login</a></li>
@@ -25,27 +26,56 @@
 				</nav>			
 			</header>
 		
+			<!-----FAILURE form-elemnt-->
+			<div>
+				<input type="button" id="registerbutton" value="Register">
+			</div>
+				
+
 			<section id="foto_display">
 				<!--Optional Photo-->
 			</section>
 		
+			<section id="social_icons">
+				<p>Follow me on:</p>				
+				<img src="img/icons/Icon_facebook.png"
+						 class="facebook"
+						 alt="Facebook"
+						 width="50"
+						 height="50">
+				<img src="img/icons/Icon_twitter.png"
+						 class="twitter"
+						 alt="Twitter"
+						 width="50"
+						 height="50">
+				<img src="img/icons/Icon_skype.png"
+						 class="skype"
+						 alt="skype"
+						 width="50"
+						 height="50">
+				<img src="img/icons/Icon_youtube.png"
+						 class="youtube"
+						 alt="youtube"
+						 width="50"
+						 height="50">
+				<img src="img/icons/Icon_instagram.png"
+						 class="instagram"
+						 alt="instagram"
+						 width="50"
+						 height="50">
+			</section>
+
 			<div id="main_flex">
 				<section id="left_side">				
-					<nav id="side_menu">
-						<ul class="navmain level_1">			
-							<li><a href="index.html" >Home</a></li>
+					<nav id="side_menu" role="navigation">
+						<ul class="navside">			
+							<li><a href="index.html">Home</a></li>
 							<li><a href="artist.html">Artist</a></li>
-							<li><a href="multimedia.html">Multimedia</a>
-								<!--<ul class="navmain level_2">
-									<li><a href="FotoGallery.html">Foto-Gallerie</a></li>
-									<li><a href="MusicGallery.html">Music-Mixes</a></li>
-									<li><a href="VideoGallery.html">Video-Mixes</a></li>
-								</ul> -->
-							</li>
+							<li><a href="multimedia.html">Multimedia</a></li>
 							<li><a href="produktion.html">Produktion</a></li>
 							<li><a href="kontakt.html" class="current">Kontakt</a></li>
 						</ul>
-				</nav>
+					</nav>
 				</section>
 
 				<section id="main_section">
@@ -90,34 +120,7 @@
 		</div>	<!-- Ende main-flex -->
 		
 		<footer id="the_footer">
-			<section id="social_icons">
-				<img src="img/icons/Icon_facebook.png"
-						 class="facebook"
-						 alt="Facebook"
-						 width="50"
-						 height="50">
-				<img src="img/icons/Icon_twitter.png"
-						 class="twitter"
-						 alt="Twitter"
-						 width="50"
-						 height="50">
-				<img src="img/icons/Icon_skype.png"
-						 class="skype"
-						 alt="skype"
-						 width="50"
-						 height="50">
-				<img src="img/icons/Icon_youtube.png"
-						 class="youtube"
-						 alt="youtube"
-						 width="50"
-						 height="50">
-				<img src="img/icons/Icon_instagram.png"
-						 class="instagram"
-						 alt="instagram"
-						 width="50"
-						 height="50">
-			</section>
-
+			
 			<address id="bottom_address">
 			Dj-Kingonair &bull; Kingstreet 123 &bull; 01234 DJ-Town <br>
 			&nbsp; &nbsp; &nbsp;Tel: 012345/67890 &bull; Fax: 01234 567891

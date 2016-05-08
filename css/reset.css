@@ -1,0 +1,36 @@
+/*=================================================================
+						Stylesheet HardReset
+
+Datei: reset.css
+Autor: ~
+Datum: 07.05.16
+
+==================================================================*/
+
+@media all {
+/* ==============================================
+TEIL I – Reset and Html 5 Elements
+============================================== */
+html { overflow-y: scroll; }
+* {
+	padding: 0;
+	margin: 0;
+}
+header, nav, section, article, aside, footer {
+	display: block;
+}
+/* ==============================================
+TEIL II – Abstände restaurieren
+============================================== */
+h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol {
+margin-bottom: 1em;
+}
+ul, ol { margin-left: 2em; }
+ul ul, ul ol, ol ol, ol ul { margin-bottom: 0; }
+blockquote { margin: 1em 2em; }
+} /* Ende @media – nicht löschen! */
+/* ======================================
+E N D E reset.css
+====================================== */
