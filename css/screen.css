@@ -27,7 +27,7 @@ body {
 	display: flex;
 	justify-content: center;
 	line-height: 1.5;
-	background: url(../img/background/1.png);	
+	background: url(../img/background/1b.png);	
 	background-repeat: repeat;
 	background-attachment: fixed;						
 }
@@ -39,34 +39,22 @@ body {
 #top_header {
 	display: flex;
 	flex-direction: row;
-	height: 200px;
-	padding: 10px;
+	height: 250px;
 }
 #top_header.logo {
 	flex: 1;
 	color: black;
-	padding: 10px 10px 40px 10px;
+	padding: 10px 10px 10px 10px;
+	margin: auto 5px;
 }
 #registerbutton {
 	position: absolute;
 	Top: 20px;
 	Right: 20px;
 	background-color: #C0C0C0;	/*grey*/
-	border: 3px solid grey;
+	border: 3px solid red;
 	border-radius: 10px;
 	padding: 5px;
-}
-#top_menu {
-	flex: 1;
-	text-align: right;
-	background: linear-gradient(to right, grey, lightgrey);
-	margin: auto 5px;
-	border: 3px solid grey;
-}
-#top_menu li {
-	display: inline-block;
-	padding: 5px;	
-	font-size: 25px;
 }
 #social_icons {
 	text-align: right;
@@ -146,5 +134,7 @@ a:active {
 	font-size: 25px;
 	text-align: center;
 }
-
+.mainvideo {
+	
+}
 

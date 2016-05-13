@@ -4,18 +4,30 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>DJ-KINGONAIR - Home</title>
-	<link href="icon/favicon.css" rel="shortcut" />
+	<link href="img/icons/favicon_1.ico" rel="shortcut icon">
 	<link href="css/central.css" rel="stylesheet"/>
 	
 	<style>
-			
+		#greetings {
+			text-align: center;		
+		}
+		#website_info {
+			text-align: center;
+		}
 	</style>
 </head>
 <body>
 	<div id="big_wrapper">
 			<header id="top_header" role="banner">					
 				<h1><a href="index.html">
-					<img src="img/logo/king_crown_1.svg"
+					
+
+
+						<!<img --srcset="img/logo/king_crown_400x200.svg 400w,
+								 img/logo/king_crown_800x200.svg 800w,
+								 img/logo/king_crown_1600x200.svg 1600w"
+						sizes="100vw"-->			
+						<img src="img/logo/king_crown_800x200.svg"
 						class="logo"
 						alt="DJ-KINGONAIR"/></a>
 				</h1>
@@ -23,46 +35,64 @@
 				<nav id="top_menu" role="navigation">
 					<ul class="navmain level1">			
 						<!--<li><a href="register.html">Register</a></li>-->
-						<li><a href="login.html" class="current">Login</a></li>
+						<li><a href="login.html">Login</a></li>
 					</ul>
 				</nav>			
 			</header>
 
-			<form>
+			<form id="registerbutton">
 				<div>
-					<input type="button" id="registerbutton" value="Register">
+					<input type="button" value="-Hier anmelden-">
 				</div>
 			<form>	
 
 			<section id="foto_display">
 				<!--Optional Photo-->
 			</section>
-			
+
+			<form class="suchformular" action="#">
+				<label for="suchfeld">test</label>
+				<input type="text" 
+					   name="suchfeld" 
+					   id="suchfeld" 
+					   size="30" 
+					   maxlength="80">
+				<input type="image" 
+					   alt="Suchen" 
+					   class="lupe" 
+					   src="img/icons/lupe.png">
+ 			</form>
+
 			<section id="social_icons">
 				<p>Follow me on:</p>
-				<img src="img/icons/Icon_facebook.png"
+				<img src="img/icons/Icon_facebook_gray.png"
 						 class="facebook"
 						 alt="Facebook"
 						 width="50"
 						 height="50">
-				<img src="img/icons/Icon_twitter.png"
+				<img src="img/icons/Icon_twitter_gray.png"
 						 class="twitter"
 						 alt="Twitter"
 						 width="50"
 						 height="50">
-				<img src="img/icons/Icon_skype.png"
+				<img src="img/icons/Icon_skype_gray.png"
 						 class="skype"
 						 alt="skype"
 						 width="50"
 						 height="50">
-				<img src="img/icons/Icon_youtube.png"
+				<img src="img/icons/Icon_youtube_gray.png"
 						 class="youtube"
 						 alt="youtube"
 						 width="50"
 						 height="50">
-				<img src="img/icons/Icon_instagram.png"
+				<img src="img/icons/Icon_instagram_gray.png"
 						 class="instagram"
 						 alt="instagram"
+						 width="50"
+						 height="50">
+				<img src="img/icons/Icon_google_gray.png"
+						 class="google"
+						 alt="google"
 						 width="50"
 						 height="50">
 			</section>
@@ -105,7 +135,7 @@
 				
 			<section id="right_side">
 				<div id=side_news">
-					<h4>Der neuste Mix:</h4>
+					<h3>Der neuste Mix:</h3>
 					<div class="mainvideo">
 						<iframe width="320" height="180"
 							 src="https://www.youtube.com/embed/znjsmdvTd-E" 					 	         frameborder="0" allowfullscreen>
@@ -117,7 +147,7 @@
 		</div>	<!-- Ende main-flex -->
 		
 		<footer id="the_footer">
-
+			
 			<address id="bottom_address" role="contentinfo">
 			Dj-Kingonair &bull; Kingstreet 123 &bull; 01234 DJ-Town <br>
 			&nbsp; &nbsp; &nbsp;Tel: 012345/67890 &bull; Fax: 01234 567891
