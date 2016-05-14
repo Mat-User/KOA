@@ -8,25 +8,27 @@ Datum: 13.05.2016
 
 #top_menu {
 	flex: 1;
-	
+	position: relative;
 }
 #top_menu ul.navmain {
-	background: linear-gradient(to right, grey, lightgrey);
+	background: linear-gradient(to right,silver ,grey);
 	text-align: right;
 	font-size: 18px;
-	border: 3px solid grey;
+	padding-right: 230px;
+	border: 3px outset silver;
 	margin: 85px 5px;
 }
 #top_menu ul.navmain li {
 	display: inline-block;
-	padding: 3px 20px 3px 20px;
-	border: 5px outset silver;
+	padding: 2px 20px 2px 20px;
+	border: 3px outset silver;
 }
 ul.navmain li a:hover,
 ul.navmain a:focus {
 	color: black;
 	font-weight: bold;
 	background-color: #C0C0C0;
+	border: 3px inset silver;
 	border-color: red;
 	border-bottom: none;
 }
@@ -34,27 +36,15 @@ ul.navmain a:active {
 	color: black;
 	background-color: #d9d9d9;
 }
-/* ======================================
-   Suchformular gestalten
-   ====================================== */
-
-.suchformular label {
-	position: absolute;
-	left: -32768px;
-	top: -32768px;
-	width: 0;
-	height: 0;
-}
-
+/*##################### Suchformular ##########################*/
 .suchformular {
 	position: absolute;
-	top: 5px;
-	right: 20px;
+	top: 90px;
+	right: 15px;
 }
-
 .suchformular input[type="text"] {
-	width: 100px;
-	font-size: 11px;
+	width: auto;
+	font-size: 18px;
 	border: none;
 	border-radius: 4px;
 	padding: 3px 25px 3px 9px;
@@ -63,7 +53,7 @@ ul.navmain a:active {
 .suchformular input.lupe {
 	position: absolute;
 	right: 7px;
-	top: 3px;
+	top: 7px;
 	padding: 0;
 	margin: 0;
 }

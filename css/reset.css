@@ -25,7 +25,7 @@ TEIL II – Abstände restaurieren
 h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol {
-margin-bottom: 1em;
+margin-bottom: 0.5em;
 }
 ul, ol { margin-left: 2em; }
 ul ul, ul ol, ol ol, ol ul { margin-bottom: 0; }

@@ -47,29 +47,12 @@ body {
 	padding: 10px 10px 10px 10px;
 	margin: auto 5px;
 }
-#registerbutton {
-	position: absolute;
-	Top: 20px;
-	Right: 20px;
-	background-color: #C0C0C0;	/*grey*/
-	border: 3px solid red;
-	border-radius: 10px;
-	padding: 5px;
-}
-#social_icons {
-	text-align: right;
-	padding: 0px 20px;
-	color: silver;	
-}
-#social_icons p {
-	padding-right: 150px;
-}
 
 /*
 #foto_display {
 }
 */
-
+/*################### left side ######################*/
 #left_side {
 	background: grey;
 	flex: 1;
@@ -83,6 +66,7 @@ body {
 	flex-direction: row;
 	margin-top: 20px;
 }
+/*################### main ###########################*/
 #main_section {
 	background-color: silver;
 	border-radius: 10px;
@@ -91,14 +75,29 @@ body {
 	padding: 20px;
 	border: 3px solid grey;
 }
+/*################### right side #####################*/
 #right_side  {
 	flex: 1;
 	background-color: rgba(128,128,128,0.7);
 	border-radius: 10px;
 	color: silver;
-	border: 3px solid grey;
-	padding: 20px;
+	border: 5px solid grey;
 	margin: 0px 10px 0px 10px;
+}
+#social_icons {
+	background-color: silver;
+	padding: 0px 10px 0px 10px;
+	border-top: 5px solid grey;
+	border-bottom: 5px solid grey;
+	color: black;	
+}
+#social_icons p {
+	text-align: center;
+}
+#side_news {
+	text-align: center;
+	padding-top: 7px;
+	border-bottom: 5px solid grey;
 }
 #the_footer {	
 	padding: 20px;
@@ -137,4 +136,9 @@ a:active {
 .mainvideo {
 	
 }
-
+#registerbutton {
+	background-color: #C0C0C0;	/*grey*/
+	border: 3px solid red;
+	border-radius: 10px;
+	padding: 5px;
+}
