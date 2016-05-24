@@ -1,45 +1,43 @@
-/*===========================================================
-			Sitenavigation Vertical - #sidemenue
-
-Datei: navigation_vertical.css
-Autor: ~
-Datum: 07.05.16
-
-============================================================*/
-
-ul.navside{
-	padding: 0;
+/* ---------- Vertical --------*/
+ul.navside {
+    padding: 0;
 	margin: 0;
+	background-color: rgb(128,128,128);
 	border-top: 1px solid silver;
 	font-size: 18px;
+    box-shadow: 0 0 5px #3c3c40;          
 }
-ul.navside li {
+ 
+ul.navside li  {
+    background-image: linear-gradient(top, #535357, #3c3c3f);
+	list-style-type: none;
 	list-style-type: none;
 	border-left: 1px solid silver;
 	border-bottom: 1px solid silver;
+   
 }
-ul.navside a {
-	display: block;
-	text-decoration: none;
-	color: black;
-	background-color: gray;
-	padding: 4px;
+ 
+ul.navside li a  {
+    border-bottom: 1px solid #292929;
+    display: block;
+    padding: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #000;
+    box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2);
 	border-left: 3px solid #eee;
 }
-ul.navside a.current {
-	color: black;
-	background-color: #C0C0C0;
+ 
+ul.navside li a:hover,
+ul.navside li a:focus {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+    background-color: #59595c;
 	border-left-color: red;
-	border-bottom: none;
+    box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2), 0 1px 0px #292929;
 }
-ul.navside a:hover,
-ul.navside a:focus {
-	color: black;
-	background-color: #C0C0C0;
-	border-left-color: red;
-	border-bottom: none;
+ 
+ul#vertical li a:active {
+ 	background: #414142;
+    box-shadow: inset 0 2px 3px rgba(0,0,0, 0.2);
 }
-ul.navside a:active {
-	color: black;
-	background-color: #d9d9d9;
 }
