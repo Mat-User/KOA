@@ -4,18 +4,26 @@ include("connect.php");
 include("functions.php");
 
 if(logged_in()) {
-	
 ?>
+
 <!DOCTYPE html>
 <html lang="de"">
 <head>
 	<meta charset="utf-8">
-	<title>DJ-KINGONAIR - Kontakt</title>
+	<title>DJ-KINGONAIR - Video Gallerie</title>
 	<link href="img/icons/favicon_1.ico" rel="shortcut icon">
 	<link href="css/central.css" rel="stylesheet"/>
 	<meta name="viewport" content="width=device-width" initial-scale="1.0">
 	<style>
-			
+		#videogallery {
+			display: flex;
+			flex-flow: row wrap;
+			text-align: center;
+		}
+		#videogallery .videofile {
+			flex: 1;
+	
+		}
 	</style>
 </head>
 <body>
@@ -59,45 +67,79 @@ if(logged_in()) {
 			<section id="foto_display">
 				<!--Optional Photo-->
 			</section>
-			
+
 			<div id="main_flex">
 				<section id="left_side">				
 					<nav id="side_menu" role="navigation">
 						<ul class="navside">			
 							<li><a href="main.php">Home</a></li>
 							<li><a href="artist.php">Artist</a></li>
-							<li><a href="multimedia.php">Multimedia</a></li>
+							<li><a href="multimedia.php" class="current">Multimedia</a></li>
 							<li><a href="produktion.php">Produktion</a></li>
-							<li><a href="kontakt.php" class="current">Kontakt</a></li>
+							<li><a href="kontakt.php">Kontakt</a></li>
 						</ul>
 					</nav>
 				</section>
 
-				<section id="main_section">
-					<article>
-						<h2 class="maintitle">Kontakt</h2>
-						<form class="kontaktformular" method="post" action="kontakt.php">			
-						<!--<form class="kontaktformular" action="http://www.formular-chef.de/fc.cgi" method="post">
-						<input type="hidden" name="empfaenger" value="...">-->
-							<div>
-								<label for="besuchername">Name:</label>
-								<input type="text" id="besuchername" name="besuchername">
-							</div>
-							<div>
-								<label for="besuchermail">E-Mail:</label>
-								<input type="email" id="besuchermail" name="besuchermail">
-							</div>
-							<div>
-								<label for="nachricht">Nachricht:</label>
-								<textarea id="nachricht" name="nachricht"
-										cols="20" rows="5"></textarea>
-							</div>
-							<div>
-								<input type="submit" value="Abschicken">
-							</div>
-						</form>			
-					</article>
-				</section>
+				<section id="main_section">		
+					<h2 class="maintitle">Video Gallerie</h2>
+					<div id="videogallery">
+
+						<div class="videofile">
+							<iframe width="550" height="270"
+							 src="https://www.youtube.com/embed/znjsmdvTd-E" 					 	         frameborder="0" allowfullscreen>
+							</iframe>
+						</div>
+
+						<div class="videofile">
+							<iframe width="550" height="270" 
+							src="https://www.youtube.com/embed/ohgDvftKTsM" 							frameborder="0" allowfullscreen>
+							</iframe>
+						</div>
+
+						<div class="videofile">
+							<iframe width="550" height="270" 
+							 src="https://www.youtube.com/embed/14oYCnbOdNk" 								 frameborder="0" allowfullscreen>
+							</iframe>
+						</div>
+
+						<div class="videofile">
+							<iframe width="550" height="270"
+							 src="https://www.youtube.com/embed/FuVic0hKhf0" 								 frameborder="0" allowfullscreen>
+							</iframe>
+						</div>
+
+<!------------------------------------------inactive only pic-------------------------->
+						<div class="videofile">
+							<video width="550" height="270" controls poster="img/VideoGallery/xmas.png">
+					 		<source src="videos/xmas.mp4" type="video/mp4">
+			  		 		<track src="untertitel.vtt" kind="subtitles" srclang="de" label="Deutsch" default>
+		   						Ihr Webbrowser unterstützt das video-Tag nicht.
+							</video>
+						</div>
+						<div class="videofile">
+							<video width="550" height="270" controls poster="img/VideoGallery/geschenke.png">
+					 		<source src="videos/geschenke.mp4" type="video/mp4">
+			  		 		<track src="untertitel.vtt" kind="subtitles" srclang="de" label="Deutsch" default>
+		   						Ihr Webbrowser unterstützt das video-Tag nicht.
+							</video>
+						</div>
+						<div class="videofile">
+							<video width="550" height="270" controls poster="img/VideoGallery/friday.png">
+					 		<source src="videos/friday.mp4" type="video/mp4">
+			  		 		<track src="untertitel.vtt" kind="subtitles" srclang="de" label="Deutsch" default>
+		   						Ihr Webbrowser unterstützt das video-Tag nicht.
+							</video>
+						</div>
+						<div class="videofile">
+							<video width="550" height="270" controls poster="img/VideoGallery/friday.png">
+					 		<source src="videos/friday.mp4" type="video/mp4">
+			  		 		<track src="untertitel.vtt" kind="subtitles" srclang="de" label="Deutsch" default>
+		   						Ihr Webbrowser unterstützt das video-Tag nicht.
+							</video>
+						</div>
+					</div>										
+			</section>
 				
 			<section id="right_side">
 

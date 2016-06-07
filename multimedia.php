@@ -4,18 +4,30 @@ include("connect.php");
 include("functions.php");
 
 if(logged_in()) {
-	
 ?>
+
 <!DOCTYPE html>
 <html lang="de"">
 <head>
 	<meta charset="utf-8">
-	<title>DJ-KINGONAIR - Kontakt</title>
+	<title>DJ-KINGONAIR - Multimedia</title>
 	<link href="img/icons/favicon_1.ico" rel="shortcut icon">
 	<link href="css/central.css" rel="stylesheet"/>
 	<meta name="viewport" content="width=device-width" initial-scale="1.0">
 	<style>
-			
+		#multimedia {
+			display: flex;
+			text-align: center;
+		}
+		.fotomixes {
+			flex: 1;
+		}
+		.musicmixes {
+			flex: 1;
+		}
+		.videomixes {
+			flex: 1;
+		}
 	</style>
 </head>
 <body>
@@ -59,43 +71,43 @@ if(logged_in()) {
 			<section id="foto_display">
 				<!--Optional Photo-->
 			</section>
-			
+
 			<div id="main_flex">
 				<section id="left_side">				
 					<nav id="side_menu" role="navigation">
 						<ul class="navside">			
 							<li><a href="main.php">Home</a></li>
 							<li><a href="artist.php">Artist</a></li>
-							<li><a href="multimedia.php">Multimedia</a></li>
+							<li><a href="multimedia.php" class="current">Multimedia</a></li>
 							<li><a href="produktion.php">Produktion</a></li>
-							<li><a href="kontakt.php" class="current">Kontakt</a></li>
+							<li><a href="kontakt.php">Kontakt</a></li>
 						</ul>
 					</nav>
 				</section>
-
+				
 				<section id="main_section">
-					<article>
-						<h2 class="maintitle">Kontakt</h2>
-						<form class="kontaktformular" method="post" action="kontakt.php">			
-						<!--<form class="kontaktformular" action="http://www.formular-chef.de/fc.cgi" method="post">
-						<input type="hidden" name="empfaenger" value="...">-->
-							<div>
-								<label for="besuchername">Name:</label>
-								<input type="text" id="besuchername" name="besuchername">
-							</div>
-							<div>
-								<label for="besuchermail">E-Mail:</label>
-								<input type="email" id="besuchermail" name="besuchermail">
-							</div>
-							<div>
-								<label for="nachricht">Nachricht:</label>
-								<textarea id="nachricht" name="nachricht"
-										cols="20" rows="5"></textarea>
-							</div>
-							<div>
-								<input type="submit" value="Abschicken">
-							</div>
-						</form>			
+					<article>			
+					<h2 class="maintitle">Multimedia</h2>
+						<div id="multimedia">					
+							<figure class="fotomixes">
+							<a href="Foto-Gallery.php">					
+								<img src="img/icons/Photos_Menue_1_250x250.svg" alt="Videos"width="250" height="250">
+								<figcaption>Fotogallerie</figcaption>
+							</a>
+							</figure>
+							<figure class="musicmixes">
+							<a href="Music-Gallery.php">
+								<img src="img/icons/Music_Menue_1_250x250.svg" alt="Musik" width="250" height="250">
+								<figcaption>Music-Mixes</figcaption>
+							</a>	
+							</figure>
+							<figure class="videomixes">
+							<a href="Video-Gallery.php">					
+								<img src="img/icons/Videos_Menue_1_250x250.svg" alt="Videos"width="250" height="250">
+								<figcaption>Video-Mixes</figcaption>
+							</a>
+							</figure>
+						</div>	
 					</article>
 				</section>
 				
@@ -167,3 +179,4 @@ if(logged_in()) {
 	exit(); // can be removed if nothing below
 }
 ?>
+

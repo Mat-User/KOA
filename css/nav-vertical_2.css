@@ -1,12 +1,13 @@
-/*===========================================================
-			Sitenavigation Vertical - #sidemenue
+/*===============================================================
+	Alternate 2:	
+	Navigation Vertical(left side) - Homepage Dj-Kingonair
 
-Datei: navigation_vertical.css
-Autor: ~
-Datum: 07.05.16
+Datei: navmain-vertical_2.css
+Datum: 18.02.16
+Autor: ...
+==============================================================*/
 
-============================================================*/
-
+@media screen {
 ul.navside{
 	padding: 0;
 	margin: 0;
@@ -43,3 +44,8 @@ ul.navside a:active {
 	color: black;
 	background-color: #d9d9d9;
 }
+
+} /* Ende @media - nicht löschen */
+/*==============================================================
+	E	N	D	E
+==============================================================*/

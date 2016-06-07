@@ -4,13 +4,13 @@ include("connect.php");
 include("functions.php");
 
 if(logged_in()) {
-	
 ?>
+
 <!DOCTYPE html>
 <html lang="de"">
 <head>
 	<meta charset="utf-8">
-	<title>DJ-KINGONAIR - Kontakt</title>
+	<title>DJ-KINGONAIR - Produktion</title>
 	<link href="img/icons/favicon_1.ico" rel="shortcut icon">
 	<link href="css/central.css" rel="stylesheet"/>
 	<meta name="viewport" content="width=device-width" initial-scale="1.0">
@@ -59,7 +59,7 @@ if(logged_in()) {
 			<section id="foto_display">
 				<!--Optional Photo-->
 			</section>
-			
+
 			<div id="main_flex">
 				<section id="left_side">				
 					<nav id="side_menu" role="navigation">
@@ -67,37 +67,22 @@ if(logged_in()) {
 							<li><a href="main.php">Home</a></li>
 							<li><a href="artist.php">Artist</a></li>
 							<li><a href="multimedia.php">Multimedia</a></li>
-							<li><a href="produktion.php">Produktion</a></li>
-							<li><a href="kontakt.php" class="current">Kontakt</a></li>
+							<li><a href="produktion.php" class="current">Produktion</a></li>
+							<li><a href="kontakt.php">Kontakt</a></li>
 						</ul>
 					</nav>
 				</section>
 
 				<section id="main_section">
-					<article>
-						<h2 class="maintitle">Kontakt</h2>
-						<form class="kontaktformular" method="post" action="kontakt.php">			
-						<!--<form class="kontaktformular" action="http://www.formular-chef.de/fc.cgi" method="post">
-						<input type="hidden" name="empfaenger" value="...">-->
-							<div>
-								<label for="besuchername">Name:</label>
-								<input type="text" id="besuchername" name="besuchername">
-							</div>
-							<div>
-								<label for="besuchermail">E-Mail:</label>
-								<input type="email" id="besuchermail" name="besuchermail">
-							</div>
-							<div>
-								<label for="nachricht">Nachricht:</label>
-								<textarea id="nachricht" name="nachricht"
-										cols="20" rows="5"></textarea>
-							</div>
-							<div>
-								<input type="submit" value="Abschicken">
-							</div>
-						</form>			
+					<article>			
+						<h2 class="maintitle">Under Construction</h2>
+						<section id="worker">
+					<img src="img/FotoDisplay/worker_all.svg"
+						 class="foto"
+						 alt="Foto of Worker"/>
 					</article>
 				</section>
+				
 				
 			<section id="right_side">
 
@@ -148,7 +133,7 @@ if(logged_in()) {
 		</div>	<!-- Ende main-flex -->
 		
 		<footer id="the_footer">
-			
+
 			<address id="bottom_address">
 			Dj-Kingonair &bull; Kingstreet 123 &bull; 01234 DJ-Town <br>
 			&nbsp; &nbsp; &nbsp;Tel: 012345/67890 &bull; Fax: 01234 567891

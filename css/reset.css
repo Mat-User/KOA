@@ -30,6 +30,7 @@ margin-bottom: 0.5em;
 ul, ol { margin-left: 2em; }
 ul ul, ul ol, ol ol, ol ul { margin-bottom: 0; }
 blockquote { margin: 1em 2em; }
+
 } /* Ende @media – nicht löschen! */
 /* ======================================
 E N D E reset.css
