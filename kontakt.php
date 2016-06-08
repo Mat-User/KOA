@@ -21,7 +21,7 @@ if(logged_in()) {
 <body>
 	<div id="big_wrapper">
 			<header id="top_header" role="banner">					
-				<h1><a href="index.html">
+				<h1><a href="main.php">
 					
 
 

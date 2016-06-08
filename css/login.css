@@ -70,7 +70,8 @@ label {
 }
 #loginscreen,
 #registerscreen,
-#passwordscreen {
+#passwordscreen,
+#byescreen {
 	max-width: 320px;
 	border-collapse: separate;
     border-spacing: 10px 20px;

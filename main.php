@@ -37,7 +37,7 @@ if(logged_in()) {
 <body>
 	<div id="big_wrapper">
 			<header id="top_header" role="banner">					
-				<h1><a href="index.html">
+				<h1><a href="main.php">
 					<img srcset="img/logo/crown_verysmall.png 320w,
 									 img/logo/crown_small.png 400w,
 									 img/logo/crown_medium.png 800w,
