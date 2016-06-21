@@ -35,36 +35,7 @@
 						 alt="Logo DJ-Kingonair"
 						 class="logo">
 					</a>		
-				</h1>
-				
-				<!--<ul id="top_menu">
-					<li>
-						<form class="suchformular" action="searchbar.php">
-							<input type="text" 
-							   name="suchfeld" 
-							   id="suchfeld" 
-							   size="15" 
-							   maxlength="60">
-							<input type="image" 
-							   alt="Suchen" 
-							   class="lupe" 
-							   src="img/icons/lupe.png">
-		 				</form>
-					</li>
-					<li>
-						<a href="#">Login</a>
-							<ul>
-								<li><a href="#">CSS</a></li>
-								<li><a href="#">Graphic design</a></li>
-								<li><a href="#">Development tools</a></li>
-								<li><a href="#">Web design</a></li>
-							</ul>
-					</li>
-						<li><a href="#">Register</a></li>	
-				</ul>
-
-					
-				</nav>	-->		
+				</h1>		
 			</header>
 
 			<section id="foto_display">

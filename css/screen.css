@@ -5,33 +5,45 @@ Datei: layout.css
 Datum: 29.03.16
 ===============================================*/
 
-@media screen and (min-width: 768px) {
-#main_flex {
-	display: flex;
-	flex-direction: row;			// Here to column shifts layout
-	margin-top: 20px;
-}
+/* --------------max-width: 320px-------------------------------------*/
+@media screen and (min-width: 320px) and (max-width:767px){
+	#main_flex {
+			flex-direction: column;			// Here to column shifts layout
+		}
+		#main_section {
+			background-color: silver;
+			border-radius: 10px;
+			color: black;
+			flex: 1;
+			padding: 10px;
+			
+		}
+}	/*Ende @media screen*/
 
-} Ende @media screen
+/*-------------min-width: 768 px---------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	#main_flex {
+			display: flex;
+			flex-direction: row;
+			margin-top: 20px;		// Here to column shifts layout
+	}
 
-@media screen and (max-width: 767px) 
-#main_flex {
-	display: flex;
-	flex-direction: column;			// Here to column shifts layout
-	margin-top: 20px;
-}
-#main_section {
-	background-color: silver;
-	border-radius: 10px;
-	color: black;
-	flex: 1;
-	padding: 10px;
-	border: 3px solid grey;
-}
-} /*Ende @media screen*/
+} /* Ende @media screen */
 
+/*-------------min-width: 768 px---------------------------------------*/
+@media screen and (min-width: 1024px) {
+	#main_flex {
+			display: flex;
+			flex-direction: row;
+			margin-top: 20px;		// Here to column shifts layout
+	}
 
-/*-----------------H1-H6------------------------*/
+} /* Ende @media screen */
+
+/*-----------General Screen Styles all Sizes---------------------------*/
+
+/*-----------------@Media Screen---------------------------------------*/
+@media screen {
 
 h1 { 
 	font: Tahoma 22px bold;
@@ -188,14 +200,16 @@ a:active {
 .suchformular {
     position: relative;
   }
-  
+ 
  .suchformular input[type="text"] {
-    width: 100%; 
+    width: 84%; 
     font-size: 20px; 
     border: none;
     border-radius: 4px;
     padding: 0;
     margin: 0; 
+    padding-left:4%;
+    padding-right:12%;
   }
  .suchformular input.lupe {
     position: absolute;
@@ -204,7 +218,7 @@ a:active {
     padding: 0;
     margin: 0;
   }
-
+} /* Ende @media Screen */
 /*==============================================================
 	E	N	D	E
 ==============================================================*/

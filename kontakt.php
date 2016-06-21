@@ -13,7 +13,7 @@ if(logged_in()) {
 	<title>DJ-KINGONAIR - Kontakt</title>
 	<link href="img/icons/favicon_1.ico" rel="shortcut icon">
 	<link href="css/central.css" rel="stylesheet"/>
-	<meta name="viewport" content="width=device-width" initial-scale="1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
 			
 	</style>
@@ -22,9 +22,6 @@ if(logged_in()) {
 	<div id="big_wrapper">
 			<header id="top_header" role="banner">					
 				<h1><a href="index.php">
-					
-
-
 						<!<img --srcset="img/logo/king_crown_400x200.svg 400w,
 								 img/logo/king_crown_800x200.svg 800w,
 								 img/logo/king_crown_1600x200.svg 1600w"
@@ -33,27 +30,6 @@ if(logged_in()) {
 						class="logo"
 						alt="DJ-KINGONAIR"/></a>
 				</h1>
-				
-				<nav id="top_menu" role="navigation">
-
-					<ul class="navmain level1">			
-						<li><a href="register.html">Register</a></li>
-						<li><a href="login.html">Login</a></li>
-					</ul>
-
-					<form class="suchformular" action="#">
-						<input type="text" 
-							   name="suchfeld" 
-							   id="suchfeld" 
-							   size="15" 
-							   maxlength="60">
-						<input type="image" 
-							   alt="Suchen" 
-							   class="lupe" 
-							   src="img/icons/lupe.png">
-	 				</form>
-
-				</nav>			
 			</header>
 
 			<section id="foto_display">
@@ -100,6 +76,35 @@ if(logged_in()) {
 				</section>
 				
 			<section id="right_side">
+
+				<section id="searchandlogout">
+					<table>
+						<tr>					
+							<td>
+							<form class="suchformular" action="searchbar.php">
+								<input type="text" 
+								   name="suchfeld" 
+								   class="suchfeld" 
+								   maxlength="60">
+								<input type="image" 
+								   alt="Suchen" 
+								   class="lupe" 
+								   src="img/icons/lupe.png">
+							</form>
+							</td>
+
+							<td id="logoutbutton" rowspan="2">
+								<a href="logout.php">Logout</a>
+							</td>
+						</tr>
+						
+						<tr>
+							<td id="changepassword">				
+								<a href="changepassword.php">Passwort ändern</a>
+							</td>
+						</tr>	
+		 			</table>		
+				</section>
 
 				<section id="social_icons">
 					<p>Follow me on:</p>
