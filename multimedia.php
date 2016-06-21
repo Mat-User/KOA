@@ -1,9 +1,10 @@
 <?php
-
+/*
 include("connect.php");
 include("functions.php");
 
 if(logged_in()) {
+*/
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +34,7 @@ if(logged_in()) {
 <body>
 	<div id="big_wrapper">
 			<header id="top_header" role="banner">					
-				<h1><a href="index.html">
+				<h1><a href="main.php">
 					
 
 
@@ -91,7 +92,7 @@ if(logged_in()) {
 						<div id="multimedia">					
 							<figure class="fotomixes">
 							<a href="Foto-Gallery.php">					
-								<img src="img/icons/Photos_Menue_1_250x250.svg" alt="Videos"width="250" height="250">
+								<img src="img/icons/Photos_Menue_1_250x250.svg" alt="Fotos"width="250" height="250">
 								<figcaption>Fotogallerie</figcaption>
 							</a>
 							</figure>
@@ -173,10 +174,12 @@ if(logged_in()) {
 </html>
 
 <?php
+/*
 } else {
 	echo "<div id='loginstatusred'>You are logged out</div>";
 	header("location: index.php");
 	exit(); // can be removed if nothing below
 }
+*/
 ?>
 

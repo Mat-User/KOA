@@ -4,6 +4,6 @@
 	session_destroy();
 	setcookie("email","", time() - 3600);
 
-	header("location: index.php");
+	header("location: exit.php");
 
 ?>

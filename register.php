@@ -10,13 +10,15 @@
 
 	$error = "";
 	$image = "";
+	$success = "";
+
 // Gather Data if submit clicked
 
 if(isset($_POST['submit'])) {
 
-		$firstName = mysql_real_escape_string($_POST['fname']);	// Protection against SQL_Injections
-		$lastName = mysql_real_escape_string($_POST['lname']);
-		$email = mysql_real_escape_string($_POST['email']);
+		$firstName = mysqli_real_escape_string($con, $_POST['fname']);	// Protection against SQL_Injections
+		$lastName = mysqli_real_escape_string($con, $_POST['lname']);
+		$email = mysqli_real_escape_string($con, $_POST['email']);
 		$password = $_POST['password'];
 		$passwordConfirm = $_POST['passwordConfirm'];
 	
@@ -72,7 +74,7 @@ $insertQuery = "INSERT INTO users(firstName, lastName, email, password, image, d
 				// Save image in Folder while uploading file
 				if(mysqli_query($con, $insertQuery)) {
 					if(move_uploaded_file($tmp_image,"img/userpics/$image")) {
-						$error = "Du wurdest soeben erfolgreich angemeldet<br><a href='login.php'><input type='button' class='b_regtologin' name='regtologin' value='Weiter zum Login'/></a>";			
+						$success = "Du wurdest soeben erfolgreich angemeldet<br><a href='index.php'><input type='button' class='b_regtologin' name='regtologin' value='Weiter zum Login'/></a>";			
 					}else {
 						$error = "Profilbild wurde nicht geladen";				
 					}		
@@ -138,8 +140,18 @@ $insertQuery = "INSERT INTO users(firstName, lastName, email, password, image, d
 						<td colspan="2"><input type="submit" name="submit" class="theButtons" value="Absenden" /></td>
 					</tr>
 					<tr>
-						<td colspan="2"><div id="error" style=" <?php if($error !="") { ?>
-	display: block; <?php } ?> "><?php echo $error; ?></div></td>
+						<td colspan="2"><div id="error" style=" <?php if($error !="")
+						{ ?>
+							display: block; <?php 
+						} ?> ">
+							<?php echo $error; ?></div>
+						</td>
+						
+						<td colspan="2"><div id="success" style=" <?php if($success !="") 							{ ?>
+							display: block; <?php
+						 } ?> ">
+							<?php echo $success; ?></div>
+						</td>
 					</tr>
 					
 				</table>					

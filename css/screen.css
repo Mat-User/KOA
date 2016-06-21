@@ -1,19 +1,36 @@
-	/*===============================================
-	Zentrales Stylesheet
+/*===============================================
+	Layout Stylesheet
 
-Datei: mainstyle.css
+Datei: layout.css
 Datum: 29.03.16
 ===============================================*/
 
+@media screen and (min-width: 768px) {
+#main_flex {
+	display: flex;
+	flex-direction: row;			// Here to column shifts layout
+	margin-top: 20px;
+}
+
+} Ende @media screen
+
+@media screen and (max-width: 767px) 
+#main_flex {
+	display: flex;
+	flex-direction: column;			// Here to column shifts layout
+	margin-top: 20px;
+}
+#main_section {
+	background-color: silver;
+	border-radius: 10px;
+	color: black;
+	flex: 1;
+	padding: 10px;
+	border: 3px solid grey;
+}
+} Ende @media screen
 
 
-
-
-
-
-
-
-@media screen {
 /*-----------------H1-H6------------------------*/
 
 h1 { 
@@ -67,13 +84,9 @@ body {
 	background-color: rgba(128,128,128,0.7);
 	border-radius: 10px;
 	border: 3px solid grey;
-	margin: 0px 10px 0px 10px;
+	margin: 0px 5px 0px 5px;
 }
-#main_flex {
-	display: flex;
-	flex-direction: row;			// Here to column shifts layout
-	margin-top: 20px;
-}
+
 /*################### main ###########################*/
 #main_section {
 	background-color: silver;
@@ -82,6 +95,7 @@ body {
 	flex: 4;
 	padding: 10px;
 	border: 3px solid grey;
+	margin: 0px 5px 0px 5px;
 }
 /*################### right side #####################*/
 #right_side  {
@@ -89,8 +103,8 @@ body {
 	background-color: rgba(128,128,128,0.7);
 	border-radius: 10px;
 	color: silver;
-	border: 5px solid grey;
-	margin: 0px 10px 0px 10px;
+	border: 3px solid grey;
+	margin: 0px 5px 0px 5px;
 }
 #social_icons {
 	background-color: silver;
@@ -112,7 +126,7 @@ body {
 	background-color: rgba(128,128,128,0.7);
 	border: 3px solid grey;
 	border-radius: 10px;
-	margin: 10px 10px 10px 10px;
+	margin: 10px 5px 10px 5px;
 }
 #bottom_address {
 	text-align: center;
@@ -153,25 +167,30 @@ a:active {
 	padding: 5px;
 }
 #loginstatus {
+	padding: 2px;
+	border: 3px solid black;
 	background-color: green;
 }
 #changepassword {
-	border: 3px solid black;
-	background-color: blue;
+	text-align: center;
+	border: 3px outset #F3F3F3;
+	background-color: #BDBDBD;
 }
 #logoutbutton {
 	width: 25%;
 	padding: 10px;
 	text-align: center;
-	border: 3px solid black;
-	background-color: red;
+	border: 3px outset #F3F3F3;
+	background-color: #BDBDBD;
 
 }
 /*##################### Suchformular ##########################*/
 .suchformular {
+	
 	width: 100%;
 }
 .suchformular input[type="text"] {
+	display: relative;
 	width: auto;
 	font-size: 20px;
 	border: none;
@@ -179,16 +198,15 @@ a:active {
 	padding: 3px 25px 3px 9px;
 	margin: 0;
 }
-.suchformular input.lupe {
+.lupe {
 	position: absolute;
-	right: 27px;
+	right: 7px;
 	top: 7px;
 	padding: 0;
 	margin: 0;
 }
 
 
-} /* Ende @media - nicht löschen */
 /*==============================================================
 	E	N	D	E
 ==============================================================*/

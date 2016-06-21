@@ -1,9 +1,10 @@
 <?php
-
+/*
 include("connect.php");
 include("functions.php");
 
 if(logged_in()) {
+*/
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +30,7 @@ if(logged_in()) {
 <body>
 	<div id="big_wrapper">
 			<header id="top_header" role="banner">					
-				<h1><a href="index.html">
+				<h1><a href="main.php">
 					
 
 
@@ -203,9 +204,11 @@ if(logged_in()) {
 </html>
 
 <?php
+/*
 } else {
 	echo "<div id='loginstatusred'>You are logged out</div>";
 	header("location: index.php");
 	exit(); // can be removed if nothing below
 }
+*/
 ?>
