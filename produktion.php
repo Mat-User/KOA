@@ -22,7 +22,7 @@ if(logged_in()) {
 <body>
 	<div id="big_wrapper">
 			<header id="top_header" role="banner">					
-				<h1><a href="main.php">
+				<h1><a href="index.php">
 					
 
 
@@ -65,7 +65,7 @@ if(logged_in()) {
 				<section id="left_side">				
 					<nav id="side_menu" role="navigation">
 						<ul class="navside">			
-							<li><a href="main.php">Home</a></li>
+							<li><a href="index.php">Home</a></li>
 							<li><a href="artist.php">Artist</a></li>
 							<li><a href="multimedia.php">Multimedia</a></li>
 							<li><a href="produktion.php" class="current">Produktion</a></li>

@@ -1,3 +1,11 @@
+<?php
+
+include("connect.php");
+include("functions.php");
+
+if(logged_in()) {
+?>
+	
 <!DOCTYPE html>
 <html lang="de"">
 <head>
@@ -5,66 +13,41 @@
 	<title>DJ-KINGONAIR - Home</title>
 	<link href="img/icons/favicon_1.ico" rel="shortcut icon">
 	<link href="css/central.css" rel="stylesheet" media="screen"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width" initial-scale="1.0">
 	<style>
 		#greetings {
 					
 		}
-		.dj_wall {
+		.wall {
 			float: right;
+			max-width: 30%;
 		}
 		#website_info {
 			float: left;
-			padding-left: 100px;
+			padding-left: 10px;
+			
 		}
 		.tunesenergy {
-			clear: both;
+			max-width: 30%;
 			float: left;
+			clear: both;
 		}
 	</style>
 </head>
 <body>
 	<div id="big_wrapper">
 			<header id="top_header" role="banner">					
-				<h1><a href="index.php">
+				<h1><a href="main.php">
 					<img srcset="img/logo/crown_verysmall.png 320w,
 									 img/logo/crown_small.png 400w,
-									 img/logo/crown_medium.png 800w"
-						 sizes="50vw"
+									 img/logo/crown_medium.png 800w,
+									 img/logo/crown_large.png 1600w"
+						 sizes="(min-width:600px) 50vw, 100vw"
 						 src="img/logo/crown_verysmall.png"
 						 alt="Logo DJ-Kingonair"
 						 class="logo">
 					</a>		
 				</h1>
-				
-				<!--<ul id="top_menu">
-					<li>
-						<form class="suchformular" action="searchbar.php">
-							<input type="text" 
-							   name="suchfeld" 
-							   id="suchfeld" 
-							   size="15" 
-							   maxlength="60">
-							<input type="image" 
-							   alt="Suchen" 
-							   class="lupe" 
-							   src="img/icons/lupe.png">
-		 				</form>
-					</li>
-					<li>
-						<a href="#">Login</a>
-							<ul>
-								<li><a href="#">CSS</a></li>
-								<li><a href="#">Graphic design</a></li>
-								<li><a href="#">Development tools</a></li>
-								<li><a href="#">Web design</a></li>
-							</ul>
-					</li>
-						<li><a href="#">Register</a></li>	
-				</ul>
-
-					
-				</nav>	-->		
 			</header>
 
 			<section id="foto_display">
@@ -75,7 +58,7 @@
 				<section id="left_side">				
 					<nav id="side_menu" role="navigation">
 						<ul class="navside">			
-							<li><a href="index.php" class="current">Home</a></li>
+							<li><a href="main.php" class="current">Home</a></li>
 							<li><a href="artist.php">Artist</a></li>
 							<li><a href="multimedia.php">Multimedia</a></li>
 							<li><a href="produktion.php">Produktion</a></li>
@@ -88,13 +71,14 @@
 						<h2>Dein Profil</h2>
 						<table>
 							<tr>
-								<td><?php 
-									/*
-									if (logged_in()) {
+								<td><?php if (logged_in()) {
 									 print "<div id='loginstatus'>Status: Logged in</div>";
-									} 
-									*/
-									?>
+									 }?>
+								</td>
+							</tr>
+							<tr>
+								<td>					
+									<div id="changepassword"><a href="changepassword.php">Passwort ändern</a></div>
 								</td>
 							</tr>
 						</table>
@@ -104,13 +88,14 @@
 
 				<main id="main_section">
 					<picture>
-						<img srcset="img/FotoDisplay/wall_verysmall.png 320w,
-									 img/FotoDisplay/wall_small.png 400w,
-									 img/FotoDisplay/wall_medium.png 800w"
-							 sizes="50vw"
-							 src="img/FotoDisplay/wall_verysmall.png"
+						<img srcset="img/FotoDisplay/wall_256x256.jpg 256w,
+									 img/FotoDisplay/wall_512x512.jpg 512w,
+									 img/FotoDisplay/wall_768x768.jpg 768w,
+									 img/FotoDisplay/wall_1024_1024.jpg 1024w"
+							 sizes="100vw"
+							 src="img/FotoDisplay/wall_256x256.png"
 							 alt="DJ-Kingonair"
-							 class="dj_wall">
+							 class="wall">
 					</picture>
 
 					<article id="greetings">			
@@ -124,13 +109,16 @@
 					</article>
 
 					<picture>
-						<img srcset="img/FotoDisplay/tunesenergy_verysmall.png 320w,
-									 img/FotoDisplay/tunesenergy_small.png 400w,
-									 img/FotoDisplay/tunesenergy_medium.png 800w"
-							 sizes="50vw"
-							 src="img/FotoDisplay/tunesenergy_verysmall.png"
+						<img srcset="img/FotoDisplay/tunesenergy_256x256.jpg 256w,
+									 img/FotoDisplay/tunesenergy_512x512.jpg 512w,
+									 img/FotoDisplay/tunesenergy_768x768.jpg 768w,
+									 img/FotoDisplay/tunesenergy_1024x1024.jpg 1024w,
+									 img/FotoDisplay/tunesenergy_1280x1280.jpg 1280w,
+									 img/FotoDisplay/tunesenergy_1536x1536.jpg 1536w"
+							 sizes="50vw, (min-width: 1207px) 362px"
+							 src="img/FotoDisplay/tunesenergy_256x256.jpg"
 							 alt="Tunes Energy Team"
-							 class="dj_wall">
+							 class="tunesenergy">
 					</picture>
 
 					<article id="website_info">
@@ -147,36 +135,22 @@
 				</main>
 				
 			<section id="right_side">
-
 				<section id="searchandlogout">
-					<table>
-						<tr>					
-							<td>
-							<form class="suchformular" action="searchbar.php">
-								<input type="text" 
-								   name="suchfeld" 
-								   class="suchfeld" 
-								   maxlength="60">
-								<input type="image" 
-								   alt="Suchen" 
-								   class="lupe" 
-								   src="img/icons/lupe.png">
-							</form>
-							</td>
-
-							<td id="logoutbutton" rowspan="2">
-								<a href="logout.php">Logout</a>
-							</td>
-						</tr>
-						
-						<tr>
-							<td id="changepassword">				
-								<a href="changepassword.php">Passwort ändern</a>
-							</td>
-						</tr>	
-		 			</table>		
+					<div><form class="suchformular" action="searchbar.php">
+							<input type="text" 
+							   name="suchfeld" 
+							   id="suchfeld" 
+							   size="15" 
+							   maxlength="60">
+							<input type="image" 
+							   alt="Suchen" 
+							   class="lupe" 
+							   src="img/icons/lupe.png">
+		 				</form>
+		 			</div>
+					<div id="logoutbutton"><a href="logout.php">Logout</a></div>
 				</section>
-
+				
 				<section id="social_icons">
 					<p>Follow me on:</p>
 					<img src="img/icons/Icon_facebook_gray.png"
@@ -224,7 +198,7 @@
 		</div>	<!-- Ende main-flex -->
 		
 		<footer id="the_footer">
-			
+
 			<address id="bottom_address" role="contentinfo">
 			Dj-Kingonair &bull; Kingstreet 123 &bull; 01234 DJ-Town <br>
 			&nbsp; &nbsp; &nbsp;Tel: 012345/67890 &bull; Fax: 01234 567891
@@ -236,3 +210,11 @@
 </body>
 
 </html>
+
+<?php
+} else {
+	// echo "<div id='loginstatusred'>You are logged out</div>";
+	header("location: index.php");
+	exit(); // can be removed if nothing below
+}
+?>

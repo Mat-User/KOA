@@ -28,7 +28,7 @@ Datum: 29.03.16
 	padding: 10px;
 	border: 3px solid grey;
 }
-} Ende @media screen
+} /*Ende @media screen*/
 
 
 /*-----------------H1-H6------------------------*/
@@ -186,26 +186,24 @@ a:active {
 }
 /*##################### Suchformular ##########################*/
 .suchformular {
-	
-	width: 100%;
-}
-.suchformular input[type="text"] {
-	display: relative;
-	width: auto;
-	font-size: 20px;
-	border: none;
-	border-radius: 4px;
-	padding: 3px 25px 3px 9px;
-	margin: 0;
-}
-.lupe {
-	position: absolute;
-	right: 7px;
-	top: 7px;
-	padding: 0;
-	margin: 0;
-}
-
+    position: relative;
+  }
+  
+ .suchformular input[type="text"] {
+    width: 100%; 
+    font-size: 20px; 
+    border: none;
+    border-radius: 4px;
+    padding: 0;
+    margin: 0; 
+  }
+ .suchformular input.lupe {
+    position: absolute;
+    right: 7px;
+    top: 6px;
+    padding: 0;
+    margin: 0;
+  }
 
 /*==============================================================
 	E	N	D	E

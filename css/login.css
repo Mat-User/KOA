@@ -1,0 +1,84 @@
+/*==============================================================
+				Stylesheet Login Screen
+
+File: login.css
+Date: 28.05.16
+==============================================================*/
+/*---------------Reset----------------------------------------*/
+body {
+	width: auto;
+	color: white;
+	background: url(../img/background/police.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+	padding: 0;
+	margin: 0;
+	line-height: 2em;
+	font: 20px arial, sans-serif; 
+}
+#imageupload {
+	font: 16px arial, sans-serif;
+}
+a {
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	padding: 0.3em;
+	margin: 0;
+}
+h2{
+	font: 30px arial, sans-serif;
+	font-weight: bold;
+}
+label {
+	width: 100%;
+}
+.inputFields {
+	font: 22px arial, sans-serif;
+	outline: none;
+	padding-left: 5px;
+	border: 2px solid #999;
+	border-radius: 5px;
+	transition: 0.3s linear;
+}
+.inputFields:focus,
+.inputFields:hover {
+	border: 2px solid black;
+	box-shadow: 0px 0px 10px #333; 
+}
+.theButtons {
+	width: 100%;
+	font: 22px arial, sans-serif;
+	padding: 5px;
+}
+.b_regtologin {
+	margin-top: 10px;
+	font: 15px arial, sans-serif;
+	padding: 5px;
+	border-radius: 10px;
+}
+#error {
+	color: white;
+	background-color: red;
+	font-weight: bold;
+	padding: 10px;
+	border: 3px solid silver;
+	display: none;
+}
+#wrapper {
+	color: black;
+}
+#loginscreen,
+#registerscreen,
+#passwordscreen,
+#byescreen {
+	max-width: 320px;
+	border-collapse: separate;
+    border-spacing: 10px 20px;
+	padding: 20px;
+	margin: 0px auto;
+	border: 3px solid silver;
+	margin-top: 60px;
+	background-color: rgba(255,255,255,0.5);
+}
+
