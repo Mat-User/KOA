@@ -23,17 +23,18 @@
 		}
 	</style>
 </head>
-<body>
+<body class="indexpage">		<!-- noch indexsite später bei login im css ändern -->
 	<div id="big_wrapper">
 			<header id="top_header" role="banner">					
 				<h1><a href="index.php">
-					<img srcset="img/logo/crown_verysmall.png 320w,
-									 img/logo/crown_small.png 400w,
-									 img/logo/crown_medium.png 800w"
-						 sizes="50vw"
-						 src="img/logo/crown_verysmall.png"
-						 alt="Logo DJ-Kingonair"
-						 class="logo">
+						<img 
+						sizes="50vw"
+						srcset="img/logo/king_crown_400x200.svg 400w,
+								 img/logo/king_crown_800x200.svg 800w,
+								 img/logo/king_crown_1600x200.svg 1600w"			
+						<img src="img/logo/king_crown_400x200.svg"
+						class="logo"
+						alt="DJ-KINGONAIR"/>
 					</a>		
 				</h1>		
 			</header>
@@ -45,13 +46,9 @@
 			<div id="main_flex">
 				<section id="left_side">				
 					<nav id="side_menu" role="navigation">
-						<ul class="navside">			
-							<li><a href="index.php" class="current">Home</a></li>
-							<li><a href="artist.php">Artist</a></li>
-							<li><a href="multimedia.php">Multimedia</a></li>
-							<li><a href="produktion.php">Produktion</a></li>
-							<li><a href="kontakt.php">Kontakt</a></li>
-						</ul>
+						<?php 
+							include("navigation.php");
+						?>	
 					</nav>
 
 					<article class="showprofile">
@@ -75,10 +72,11 @@
 
 				<main id="main_section">
 					<picture>
-						<img srcset="img/FotoDisplay/wall_verysmall.png 320w,
+						<img 
+							srcset="img/FotoDisplay/wall_verysmall.png 320w,
 									 img/FotoDisplay/wall_small.png 400w,
 									 img/FotoDisplay/wall_medium.png 800w"
-							 sizes="50vw"
+							 
 							 src="img/FotoDisplay/wall_verysmall.png"
 							 alt="DJ-Kingonair"
 							 class="dj_wall">

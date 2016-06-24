@@ -11,12 +11,7 @@ Datum: 29.03.16
 			flex-direction: column;			// Here to column shifts layout
 		}
 		#main_section {
-			background-color: silver;
-			border-radius: 10px;
-			color: black;
-			flex: 1;
-			padding: 10px;
-			
+			flex: 1;		// Here flex/width is changed for small layouts	
 		}
 }	/*Ende @media screen*/
 
@@ -24,8 +19,8 @@ Datum: 29.03.16
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 	#main_flex {
 			display: flex;
-			flex-direction: row;
-			margin-top: 20px;		// Here to column shifts layout
+			flex-direction: row;	// Here to column shifts layout
+			margin-top: 20px;		
 	}
 
 } /* Ende @media screen */
@@ -34,8 +29,7 @@ Datum: 29.03.16
 @media screen and (min-width: 1024px) {
 	#main_flex {
 			display: flex;
-			flex-direction: row;
-			margin-top: 20px;		// Here to column shifts layout
+			flex-direction: row;	// Here to column shifts layout
 	}
 
 } /* Ende @media screen */
@@ -77,10 +71,10 @@ body {
 #top_header {
 	display: flex;
 	flex-direction: column;
-	height: 250px;
+	flex:1;
+	padding-bottom: 10px;
 }
 #top_header.logo {
-	flex: 1;
 	color: black;
 	padding: 10px 10px 10px 10px;
 }

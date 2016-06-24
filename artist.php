@@ -19,7 +19,7 @@ if(logged_in()) {
 		/*---------UeberMich & float & clear---------------*/
 
 		div.uebermich {
-			font-size: 20px;
+			font-size: 1.2em;
 		}
 		div.lebenslauf {
 			font-size: 18px;
@@ -49,17 +49,19 @@ if(logged_in()) {
 		}
 	</style>
 </head>
-<body>
+<body class="artistpage">
 	<div id="big_wrapper">
 		<header id="top_header" role="banner">					
 				<h1><a href="index.php">
-						<!<img --srcset="img/logo/king_crown_400x200.svg 400w,
+					<img 
+						sizes="50vw"
+						srcset="img/logo/king_crown_400x200.svg 400w,
 								 img/logo/king_crown_800x200.svg 800w,
-								 img/logo/king_crown_1600x200.svg 1600w"
-						sizes="100vw"-->			
+								 img/logo/king_crown_1600x200.svg 1600w"			
 						<img src="img/logo/king_crown_800x200.svg"
 						class="logo"
-						alt="DJ-KINGONAIR"/></a>
+						alt="DJ-KINGONAIR"/>
+					</a>		
 				</h1>
 			</header>
 
@@ -70,13 +72,9 @@ if(logged_in()) {
 			<div id="main_flex">
 				<section id="left_side">				
 					<nav id="side_menu" role="navigation">
-						<ul class="navside">			
-							<li><a href="index.php">Home</a></li>
-							<li><a href="artist.php" class="current">Artist</a></li>
-							<li><a href="multimedia.php">Multimedia</a></li>
-							<li><a href="produktion.php">Produktion</a></li>
-							<li><a href="kontakt.php">Kontakt</a></li>
-						</ul>
+						<?php 
+							include("navigation.php");
+						?>	
 					</nav>
 				</section>
 
@@ -87,7 +85,21 @@ if(logged_in()) {
 							<h3>Über mich</h3>
 						</hgroup>
 				<div class="uebermich">
-				<p><img src="img/FotoDisplay/DJ-K.jpg" alt="DJ-Kingonair Foto" width="400" height="398" class="imageborder floatleft">	
+				<p>
+				<img sizes="50vw"
+					 srcset="img/FotoDisplay/Dark_Kingonair_160x159.jpg 160w,
+							img/logo/Dark_Kingonair_400x398.jpg 800w,
+							img/logo/Dark_Kingonair_800x796.jpg 1600w"			
+					<img src="img/logo/Dark_Kingonair_400x398.jpg.jpg"
+					class="imageborder floatleft"
+					alt="DJ-Kingonair Foto"/>
+
+
+
+
+				<!--
+				src="img/FotoDisplay/DJ-K.jpg" alt="DJ-Kingonair Foto" width="400" height="398" class="imageborder floatleft">
+				-->	
 				Ich bin Hobby-DJ und lege gerne und viel auf.
 				Außerdem produziere ich mittlerweile auch Jingles, Musikzusammenschnitte und entwerfe Covers und Flyer.
 				<strong>Wie es dazu kam...</strong>

@@ -5,9 +5,9 @@ Datei: navmain-horizontal.css
 Datum: 18.02.16
 Autor: ...
 ==============================================================*/
-@media screen {
+/*@media screen {
 /* Main */
-#top_menu {
+/*#top_menu {
 	position: relative;
     margin: auto 20px auto auto;
 	padding: 10px 0 0 0;
@@ -44,7 +44,7 @@ Autor: ...
 }
 
 /* Sub-menu */
-#top_menu ul {
+/*#top_menu ul {
     list-style: none;
     margin: 0;
     padding: 0;    
@@ -111,7 +111,7 @@ Autor: ...
 }
 
 /* Clear floated elements */
-#top_menu:after {
+/*#top_menu:after {
     visibility: hidden;
     display: block;
     font-size: 0;
@@ -121,7 +121,7 @@ Autor: ...
 }
 
 * html #menu             { zoom: 1; } /* IE6 */
-*:first-child+html #menu { zoom: 1; } /* IE7 */
+/**:first-child+html #menu { zoom: 1; } /* IE7 */
 
 } /* Ende @media - nicht löschen */
 /*==============================================================
